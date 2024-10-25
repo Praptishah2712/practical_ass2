@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Students</title>
+</head>
+<body>
+  <h2>Students</h2>
+  <a href="/students/create">Add Student</a>
+  <ul>
+    <% students.forEach(student => { %>
+      <li><a href="/students/<%= student._id %>"><%= student.name %></a></li>
+    <% }); %>
+  </ul>
+</body>
+</html>
